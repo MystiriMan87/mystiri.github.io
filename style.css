@@ -1,0 +1,300 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Purple to blue gradient */
+    color: #fff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #8e44ad; /* Purple */
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5em;
+}
+
+/* Sections */
+section {
+    padding: 100px 0 60px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fff; /* White border */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+}
+
+.skill h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #6a11cb; /* Purple */
+}
+
+.skill p {
+    font-size: 1em;
+    color: #333; /* Dark text */
+}
+
+/* Experience Section */
+.experience-item {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #6a11cb; /* Purple */
+}
+
+.experience-item p {
+    font-size: 1em;
+    color: #333; /* Dark text */
+}
+
+/* Project Section */
+.project-card {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #6a11cb; /* Purple */
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #333; /* Dark text */
+}
+
+/* Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+form button {
+    background-color: #6a11cb; /* Purple */
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2575fc; /* Blue */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+footer .social-links a {
+    color: #6a11cb; /* Purple */
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #2575fc; /* Blue */
+}
+
+/* Animations */
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 80px 0 40px;
+    }
+
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #hero {
+        height: 60vh;
+        padding: 20px;
+    }
+
+    #hero h2 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+}
